@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> <!-- css -->
+    <title>Almuerzi web</title>
+</head>
+<body>
+
+    <div id="app"> </div>
+</body>
+
+<template id="login-template">
+    <div class="form-main">
+        <p class="form-title">Inicia sesión</p>
+        <form id="login-form" class="login-form" action="">
+            <div>
+                <p>Email</p>
+                <input id="email" placeholder="Inserte su email" type="text">
+            </div>
+            <div>
+                <p>Contraseña</p>
+                <input type="password" id="password" placeholder="Inserte su contraseña" type="text">
+            </div>
+
+            <div>
+                <button class="btn block">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</template>
+
+<template id="orders-view">
+    <div id="meals">
+
+        <ul id="meals-list">
+            <p>Cargando...</p>
+        </ul>
+
+        <form action="" id="order">
+            <input type="hidden" id="meals-id" />
+            <button id="submit" disabled >Enviar</button>
+        </form>
+    </div>
+
+    <div id="orders">
+
+        <ul id="orders-list">
+            <p>Cargando...</p>
+        </ul>
+    </div>
+</template>
+
+<script src="main.js"></script> <!-- js -->
+</html>
